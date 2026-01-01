@@ -1,0 +1,329 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;}
+
+    html{
+    scroll-behavior: smooth;
+    }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: #f4efea;
+    color: #555555;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #7BAE9E;
+
+}
+
+p {
+    font-size: 1rem;
+}
+
+.navbar {
+     background: transparent;
+    transition: background 0.3s ease;
+    padding: 1rem;
+    height: 77px;
+}
+
+.navbar.scrolled{
+    background: rgba(46, 45, 45, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    transition: ease-in 0.3s;
+}
+
+
+
+.navbar .nav-link {
+  color: #FFFDD0;
+  margin-right: 1.5rem;
+  font-weight: 500;
+  position: relative;
+}
+
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 0;
+  height: 2px;
+  background-color: #7BAE9E;
+  transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+
+.navbar .navbar-nav .nav-item .nav-link.active {
+    color: #7bae9e;
+}
+
+.nav-header{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* hero section */
+
+.hero {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("https://cdn.pixabay.com/photo/2015/05/21/11/09/infrared-sauna-776994_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: 65vh;
+}
+.hero .display-4 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.hero .lead {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+.hero .btn-primary {
+    background-color: #7bae9e;
+    color: white;
+    border: none;
+    padding:12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+}
+.hero .btn-primary:hover {
+    background-color: #6a9c8c;
+}
+
+/* about section */
+
+
+.about-image{
+    border-radius: 15px;
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+}
+
+.about-p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #555555;
+}
+
+.about-intro{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #7BAE9E;
+}
+/* services section */
+.services {
+    background-color: #F4EFEA;
+}
+
+.service-card {
+    background: white;
+    border-radius: 12px;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-radius: 12px solid #ff0000;
+}
+
+.price {
+    font-weight: 600;
+    color: #7BAE9E;
+}
+
+
+.service-card i {
+    color: #7BAE9E;
+}
+
+.service-card h5 {
+    margin-bottom: 0.5rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #555555;
+}
+
+.service-card .price {
+    font-weight: 600;
+    color: #7BAE9E;
+}
+
+.service-card i {
+    color: #7BAE9E; 
+}
+
+.my-icon{
+    color: #7BAE9E !important;
+}
+
+
+.my-icon2{
+    color: #5f7f73 !important;
+}
+
+
+.my-icon3{
+    color: #a38fbf !important;
+}
+
+
+.my-icon4{
+    color: #c2a76d !important;
+}
+
+
+.my-icon5{
+    color: #b89b7a !important;
+}
+
+
+.my-icon6{
+    color: #d4a5a5 !important;
+}
+
+/* testimonials section  */
+.testimonial-card {
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    height: 100%;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1.2rem;
+}
+
+.client-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #7BAE9E; /* same accent as your spa theme */
+}
+
+.testimonial-card:hover {
+    transform: translateY(-4px);
+    transition: 0.3s ease;
+}
+
+/* CTA section   */
+
+.cta {
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url(https://cdn.pixabay.com/photo/2016/11/22/23/40/hands-1851218_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    /* background: #7BAE9E;  */
+    color: #ffffff;
+}
+
+.cta-title {
+    font-size: 2.2rem;
+    margin-bottom: 0.6rem;
+}
+
+.cta-text {
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.btn-cta {
+    background: #ffffff;
+    color: #7BAE9E;
+    padding: 0.7rem 2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    border: none;
+}
+
+.btn-cta:hover {
+    background: #f1f7f5;
+    color: #ffffff;
+}
+
+/* contact section */
+.contact {
+    background-color: #F4EFEA;
+    color: #333333;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.form-control {
+    border-radius: 8px;
+    padding: 12px;
+}
+
+textarea.form-control {
+    resize: none;
+}
+
+.btn-cta {
+    background-color: #7BAE9E;
+    color: #fff;
+    padding: 0.7rem 2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    border: none;
+}
+
+.btn-cta:hover {
+    background-color: #5f9887;
+}
+
+/* Footer */
+.footer {
+    background-color: #2E2E2E;
+    color: #ffffff;
+    font-size: 0.95rem;
+}
+
+.footer a {
+    color: #C2A76D; /* muted gold accent */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
