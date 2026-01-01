@@ -62,7 +62,7 @@ serviceTl
   let testimonalTl = gsap.timeline({
     scrollTrigger:{
       trigger: "#testimonal",
-      start: "top center"
+      start: "top 75%"
     }
   })
 
