@@ -1,3 +1,8 @@
+window.addEventListener("scroll", () => {
+    const navbar = document.querySelector(".navbar");
+    navbar.classList.toggle("scrolled", window.scrollY > 50);
+});
+
 
 // gsap section
 gsap.registerPlugin(ScrollTrigger);
@@ -7,7 +12,7 @@ let tl = gsap.timeline({defaults: {duration: 1, ease: "power1.out"}});
 
 tl.from("#hero-section", {opacity: 0})
 .from("#hero-text", {opacity: 0, y: 50},  "-=0.5")
- .from("#hero-subtitle", {opacity: 0, x: 50}, "-=0.5")
+ .from("#hero-subtitle", {opacity: 0, y: 50}, "-=0.5")
  .from("#hero-btn", {opacity: 0, y: 50}, "-=0.5")
 
  
@@ -76,7 +81,7 @@ serviceTl
   })
 
   CtaTl
-  .from(".cta-title", {opacity: 0, x: 30, duration: 0.8, ease:"power2.out"})
+  .from(".cta-title", {opacity: 0, y: 30, duration: 0.8, ease:"power2.out"})
   .from(".cta-text", {opacity: 0, y: 30, duration: 0.8}, "-=0.3")
   .from(".btn-cta", {opacity: 0, y: 30, duration: 0.8}, "-=0.3")
 
